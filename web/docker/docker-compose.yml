@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+
+  app:
+    container_name: "__APP_ID_NAME__"
+    image: "__APP_ID_NAME__"
+    build:
+      context: "../"
+      dockerfile: "docker/app/Dockerfile"
+    networks:
+      __APP_ID_NAME__: null
+    ports:
+      - "7777:7777"
+    volumes:
+      - "..:/app"
+      - "__APP_ID_NAME___root:/root"
+      - "__APP_ID_NAME___tmp:/tmp"
+    working_dir: "/app"
+
+networks:
+  __APP_ID_NAME__: null
+
+volumes:
+  __APP_ID_NAME___root: null
+  __APP_ID_NAME___tmp: null

@@ -1,0 +1,23 @@
+{
+  "name": "__APP_ID_NAME__",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node --experimental-modules src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "unlicensed",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.0"
+  },
+  "devDependencies": {
+    "cucumber": "^5.0",
+    "jest": "^24.0"
+  }
+}
